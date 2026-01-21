@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - UniCentral</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>UniCentral</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn-text">Sign In</a>
+                    <a href="#" class="btn-primary">Register</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Our Academic Programs</h1>
+        </div>
+    </section>
+
+    <!-- Programs Content -->
+    <section class="programs-content">
+        <div class="container">
+            <div class="programs-layout">
+                <!-- Sidebar -->
+                <aside class="programs-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Find Your Program</h3>
+                        <div class="search-box">
+                            <input type="text" id="programSearch" placeholder="Search programs...">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Department</h3>
+                        <div class="filter-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="engineering" checked>
+                                <span>Engineering</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="management" checked>
+                                <span>Management</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="social-sciences" checked>
+                                <span>Social Sciences</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="natural-sciences" checked>
+                                <span>Natural Sciences</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="jurisprudence" checked>
+                                <span>Jurisprudence</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="health-sciences" checked>
+                                <span>Health Sciences</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="humanities" checked>
+                                <span>Humanities</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="filter-checkbox" data-filter="design" checked>
+                                <span>Design</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Degree Level</h3>
+                        <select class="filter-select" id="degreeFilter">
+                            <option value="all">All Degrees</option>
+                            <option value="bachelor">Bachelor's</option>
+                            <option value="master">Master's</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Interest Area</h3>
+                        <select class="filter-select" id="interestFilter">
+                            <option value="all">All Areas</option>
+                            <option value="technology">Technology</option>
+                            <option value="business">Business</option>
+                            <option value="sciences">Sciences</option>
+                            <option value="arts">Arts</option>
+                            <option value="health">Health</option>
+                        </select>
+                    </div>
+
+                    <div class="sidebar-section contact-box">
+                        <h3>Have Questions?</h3>
+                        <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@unicentral.edu</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 University Ave, City</p>
+                        <a href="about.html#contact" class="btn-primary btn-small">Visit Us</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="programs-main">
+                    <h2>Featured Programs</h2>
+                    <div class="programs-grid" id="featuredPrograms">
+                        <div class="program-card-large" data-department="engineering" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/computer-science.jpg" alt="Computer Science">
+                            </div>
+                            <div class="program-content">
+                                <h3>Computer Science</h3>
+                                <p class="program-meta">Engineering • B.Sc.</p>
+                                <p>Explore the foundations of computation, algorithms, and software development.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="management" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/business.jpg" alt="Business Administration">
+                            </div>
+                            <div class="program-content">
+                                <h3>Business Administration</h3>
+                                <p class="program-meta">Management • B.A.</p>
+                                <p>Learn the principles of management, marketing, finance, and organizational leadership.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="social-sciences" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/psychology.jpg" alt="Psychology">
+                            </div>
+                            <div class="program-content">
+                                <h3>Psychology</h3>
+                                <p class="program-meta">Social Sciences • B.A.</p>
+                                <p>Study human behavior and mental processes. Gain insights into social interactions.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="engineering" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/mechanical.jpg" alt="Mechanical Engineering">
+                            </div>
+                            <div class="program-content">
+                                <h3>Mechanical Engineering</h3>
+                                <p class="program-meta">Engineering • B.Eng.</p>
+                                <p>Design, analyze, and innovate mechanical systems.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="humanities" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/fine-arts.jpg" alt="Fine Arts">
+                            </div>
+                            <div class="program-content">
+                                <h3>Fine Arts</h3>
+                                <p class="program-meta">Humanities • B.F.A.</p>
+                                <p>Cultivate your artistic talents in painting, sculpture, and digital media.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="natural-sciences" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/environmental.jpg" alt="Environmental Science">
+                            </div>
+                            <div class="program-content">
+                                <h3>Environmental Science</h3>
+                                <p class="program-meta">Natural Sciences • B.Sc.</p>
+                                <p>Investigate environmental issues and sustainable solutions.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="jurisprudence" data-degree="master">
+                            <div class="program-image">
+                                <img src="images/law.jpg" alt="Law">
+                            </div>
+                            <div class="program-content">
+                                <h3>Law</h3>
+                                <p class="program-meta">Jurisprudence • LL.B.</p>
+                                <p>Study legal principles, international law, and jurisprudence.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="health-sciences" data-degree="master">
+                            <div class="program-image">
+                                <img src="images/medicine.jpg" alt="Medicine">
+                            </div>
+                            <div class="program-content">
+                                <h3>Medicine</h3>
+                                <p class="program-meta">Health Sciences • M.D.</p>
+                                <p>Gain comprehensive medical knowledge and clinical skills. Dedicate yourself to healthcare.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program-card-large" data-department="design" data-degree="bachelor">
+                            <div class="program-image">
+                                <img src="images/architecture.jpg" alt="Architecture">
+                            </div>
+                            <div class="program-content">
+                                <h3>Architecture</h3>
+                                <p class="program-meta">Design • B.Arch.</p>
+                                <p>Combine art and engineering to design buildings and spaces.</p>
+                                <div class="program-actions">
+                                    <a href="#" class="btn-link">Learn More</a>
+                                    <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- All Programs Table -->
+                    <h2 style="margin-top: 60px;">All Programs Overview</h2>
+                    <div class="programs-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Department</th>
+                                    <th>Degree</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="programsTableBody">
+                                <tr data-department="engineering" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Computer Science</td>
+                                    <td>Engineering</td>
+                                    <td>B.Sc.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="management" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Business Administration</td>
+                                    <td>Management</td>
+                                    <td>B.A.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="social-sciences" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Psychology</td>
+                                    <td>Social Sciences</td>
+                                    <td>B.A.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="engineering" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Mechanical Engineering</td>
+                                    <td>Engineering</td>
+                                    <td>B.Eng.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="humanities" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Fine Arts</td>
+                                    <td>Humanities</td>
+                                    <td>B.F.A.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="natural-sciences" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Environmental Science</td>
+                                    <td>Natural Sciences</td>
+                                    <td>B.Sc.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="jurisprudence" data-degree="master">
+                                    <td><i class="fas fa-graduation-cap"></i> Law</td>
+                                    <td>Jurisprudence</td>
+                                    <td>LL.B.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="health-sciences" data-degree="master">
+                                    <td><i class="fas fa-graduation-cap"></i> Medicine</td>
+                                    <td>Health Sciences</td>
+                                    <td>M.D.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                                <tr data-department="design" data-degree="bachelor">
+                                    <td><i class="fas fa-graduation-cap"></i> Architecture</td>
+                                    <td>Design</td>
+                                    <td>B.Arch.</td>
+                                    <td>
+                                        <a href="#" class="table-link">Learn More</a>
+                                        <a href="admissions.html" class="btn-primary btn-small">Apply</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>UniCentral</span>
+                    </div>
+                    <p class="footer-tagline">Empowering minds, shaping futures</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Academics</h4>
+                    <ul>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Libraries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Campus Life</h4>
+                    <ul>
+                        <li><a href="#">Student Services</a></li>
+                        <li><a href="#">Housing</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 University Ave, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@unicentral.edu</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 UniCentral. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

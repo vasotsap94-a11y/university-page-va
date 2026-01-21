@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UniCentral</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>UniCentral</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn-text">Sign In</a>
+                    <a href="#" class="btn-primary">Register</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-image">
+            <img src="images/about-hero.jpg" alt="UniCentral Campus">
+        </div>
+        <div class="about-hero-content">
+            <div class="container">
+                <h1>Empowering Minds, Shaping Futures: Our Commitment to Excellence.</h1>
+                <p>At UniCentral, we believe in fostering an environment where education thrives, knowledge expands, and every student is equipped to make a meaningful impact on the world. Our mission drives us to cultivate leaders prepared for tomorrow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+        <div class="container">
+            <h2>Our Leadership</h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-1.jpg" alt="John Doe">
+                    </div>
+                    <h3>John Doe</h3>
+                    <p class="leader-title">President</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-2.jpg" alt="Jane Appleseed">
+                    </div>
+                    <h3>Jane Appleseed</h3>
+                    <p class="leader-title">Provost</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-3.jpg" alt="Michael Scott">
+                    </div>
+                    <h3>Michael Scott</h3>
+                    <p class="leader-title">Dean of Admissions</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-4.jpg" alt="Emily Stone">
+                    </div>
+                    <h3>Emily Stone</h3>
+                    <p class="leader-title">Director of Student Affairs</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-5.jpg" alt="Robert Williams">
+                    </div>
+                    <h3>Robert Williams</h3>
+                    <p class="leader-title">Head of Research</p>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="images/leader-6.jpg" alt="Anna Schmidt">
+                    </div>
+                    <h3>Anna Schmidt</h3>
+                    <p class="leader-title">Chief Financial Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Inquiry about admissions" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-large">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Campus Location Section -->
+    <section class="campus-section" id="campus">
+        <div class="container">
+            <h2>Visit Our Campus</h2>
+            <div class="campus-layout">
+                <div class="campus-info">
+                    <h3>Location & Contact</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 University Ave, UniCity, State, 12345</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (123) 456-7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@unicentral.edu</span>
+                    </div>
+                    <p class="campus-description">
+                        UniCentral's campus is easily accessible by public transport and offers ample parking. Situated in the heart of UniCity, our vibrant campus provides students with modern facilities and a welcoming atmosphere. Guided tours are available Monday to Friday from 10 AM to 4 PM.
+                    </p>
+                    <a href="#" class="btn-primary">
+                        Get Directions <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="campus-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1644262070010!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>UniCentral</span>
+                    </div>
+                    <p class="footer-tagline">Empowering minds, shaping futures</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Academics</h4>
+                    <ul>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Libraries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Campus Life</h4>
+                    <ul>
+                        <li><a href="#">Student Services</a></li>
+                        <li><a href="#">Housing</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 University Ave, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@unicentral.edu</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 UniCentral. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
